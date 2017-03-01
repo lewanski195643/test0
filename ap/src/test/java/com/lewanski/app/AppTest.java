@@ -3,6 +3,7 @@ package com.lewanski.app;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Unit test for simple App.
@@ -34,5 +35,6 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+        assertThat("ukasz").contains("asz");
     }
 }
